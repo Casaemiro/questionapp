@@ -36,6 +36,15 @@ const Subjects = () => {
                 <button>English</button>
                 <button>Logic</button>
             </div>
+            
+            <div className="sorting">
+            <div className="sortTitle">FILTER</div>
+                <input type={"Date"} placeholder={"Date"} className="halfsort"/>
+                <input type={"text"} placeholder={"Difficulty"} className="halfsort"/>
+                <input type={"text"} placeholder={"Topic"} className="fullsort"/>
+                <input type={"Number"} placeholder={"Frequency"} className="fullsort"/>
+
+            </div>
         </div>
     );
 }

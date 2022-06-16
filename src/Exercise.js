@@ -6,7 +6,7 @@ const Exercise = () => {
                 <div className="numbering">
                     {"1."}
                 </div>
-                The value of the attribute will be the name of the downloaded file. There are no restrictions on allowed values, and the browser will automatically detect the correct file extension and add it to the file (.img, .pdf, .txt, .html, etc.).
+                {"The value of the attribute will be the name of the downloaded file. There are no restrictions on allowed values, and the browser will automatically detect the correct file extension and add it to the file (.img, .pdf, .txt, .html, etc.)."}
             </div>
             <div className="ans">
                 <button>
@@ -27,6 +27,15 @@ const Exercise = () => {
                 </div>
                 <div className="stat">
                     Difficulty <b color="green">{"2/10"}</b>
+                </div>
+                <div className="stat">
+                    Topic <b color="green">{"Logarithms, Matrices"}</b>
+                </div>
+                <div className="stat">
+                    Latst.Ex <b color="green">{"2020"}</b>
+                </div>
+                <div className="stat">
+                    Correct <b color="green">{"150/200"}</b>
                 </div>
             </div>
         </div>

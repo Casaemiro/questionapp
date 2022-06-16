@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: aqua;
+  background-color: rgba(0, 255, 255, 0.359);
   color: rgba(4, 41, 41, 0.93);
 }
 
@@ -112,7 +112,8 @@ button:hover {
   border-radius: 10px;
   padding: 10px;
   font-size: 2rem;
-  color: rgba(4, 41, 41, 0.695);
+  /* color: rgba(4, 41, 41, 0.695); */
+  color: rgb(2, 88, 2);
   background-color: rgba(2, 34, 34, 0.041);
   
 }
@@ -149,6 +150,7 @@ button:hover {
   padding-right: 2%;
   display: flex;
   flex-direction: row;
+  color: rgb(45, 12, 75);
 }
 .ans button {
   margin: 0.6%;
@@ -167,6 +169,7 @@ button:hover {
   align-items: center;
   background-color: rgba(0, 255, 255, 0.251);
   border-radius: 5px;
+  /* color: blueviolet; */
   border: 1px solid rgba(4, 41, 41, 0.068);
 }
 .first-ans {
@@ -214,6 +217,40 @@ button:hover {
   padding: 0.5%;
   margin-left: 1%;
   font-size: 0.8rem;
-  color: rgba(1, 15, 15, 0.607);
+  /* color: rgba(1, 15, 15, 0.607); */
+  color: green;
   background-color: rgba(0, 255, 255, 0.251);
+}
+.sorting {
+  border: 1px solid rgba(1, 15, 15, 0.233);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  margin-top: 5%;
+  padding: 1%;
+}
+.sorting input {
+  padding: 2%;
+  margin: 1%;
+  border-radius: 3px;
+  /* max-width: 40%; */
+  background-color: rgba(192, 252, 252, 0.616);
+  border: 1px solid rgba(4, 66, 66, 0.463);
+}
+.sortTitle {
+  width: 100%;
+  padding: 2%;
+  text-align: center;
+  color: green;
+}
+.fullsort {
+  width: 100%;
+}
+.halfsort {
+  max-width: 42%;
+}
+.courses {
+  padding-bottom: 4%;
+  border-bottom: 1px solid rgba(5, 91, 91, 0.251);
 }
