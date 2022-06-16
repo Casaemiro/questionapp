@@ -1,11 +1,13 @@
 import Profileinfo from "./Profileinfo";
+import Questiondisplay from "./Questiondisplay";
 import Subjects from "./Subjects";
 
 const Question = () => {
     return ( 
         <div className="question-section">
             <Subjects />
-            <Profileinfo marginLeft="auto"/>
+            <Questiondisplay />
+            <Profileinfo />
         </div>
      );
 }
