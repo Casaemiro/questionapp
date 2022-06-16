@@ -6,12 +6,6 @@ const Questiondisplay = () => {
         <div className="questiondisplay">
             <Subjecttopic subject={"Mathematics"}/>
             <Exercise />
-            <Exercise />
-            <Exercise />
-
-            <Exercise />
-
-
         </div>
      );
 }

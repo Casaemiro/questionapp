@@ -84,6 +84,10 @@ button:hover {
 }
 .courses button {
   margin: 0.8%;
+  padding: 2.5%;
+  padding-left: 6%;
+  padding-right: 6%;
+
 }
 .profile-section {
   display: flex;
@@ -118,25 +122,98 @@ button:hover {
   display: flex;
   flex-direction: column;
   margin-bottom: 1%;
+  color: rgb(4, 41, 41);
   margin-top: 1%;
+  /* background-color: rgba(174, 253, 253, 0.575); */
+  background-color: rgba(3, 43, 43, 0.136);
+
+
 }
 .numbering {
-  padding: 2%;
-  background-color: rgba(0, 128, 0, 0.196);
+  padding-left: 2%;
+  padding-right: 2%;
+
+  /* background-color: rgba(0, 128, 0, 0.196); */
+  background-color: aqua;
   border-bottom-right-radius: 70px;
   border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-right: 0.8%;
+  font-size: 1.4rem;
+  font-weight: bold;
+
 }
 .ask {
-  /* padding: 2%; */
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 2%;
   display: flex;
   flex-direction: row;
 }
 .ans button {
   margin: 0.6%;
+  display: flex;
+  flex-direction: row;
+  padding: 0%;
+  max-width: 40%;
 }
 .ans {
   display: flex;
   flex-direction: row;
+  margin: 0% 1%;
+  /* padding-bottom: 2%; */
+  padding-left: 5%;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgba(0, 255, 255, 0.251);
+  border-radius: 5px;
+  border: 1px solid rgba(4, 41, 41, 0.068);
+}
+.first-ans {
+  border-right: 1px solid rgba(1, 15, 15, 0.4);
+  padding: 8%;
+  font-weight: bold;
+  color: rgba(1, 15, 15, 0.607);
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  padding-bottom: 2%;
+  align-items: center;
+  
+}
+.first-ans:hover {
+  border-right: 1px solid rgba(1, 15, 15, 0.945);
+}
+.ans-final {
+  margin: 2%;
+  color: rgba(1, 15, 15, 0.607);
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  align-items: center;
+ 
+  /* background-color: green; */
+}
+.ans-final:hover {
+  color: rgba(1, 15, 15, 0.948);
+}
+.ans-sort-bottom {
+  /* border: 1px solid green; */
+  margin-bottom: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 2%;
+  margin-top: 0.4%;
+  /* justify-content: center; */
+
+}
+.stat {
+  border:1px solid rgba(1, 15, 15, 0.099);;
+  border-radius: 10px;
+  padding: 0.5%;
+  margin-left: 1%;
+  font-size: 0.8rem;
+  color: rgba(1, 15, 15, 0.607);
+  background-color: rgba(0, 255, 255, 0.251);
 }
