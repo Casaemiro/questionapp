@@ -4,7 +4,22 @@ const Subjects = () => {
     return (
         <div className="subject-section">
             <div className="subject-category">
-                <input type={"text"} placeholder="Category/Exam type" />
+                <select type={"text"} placeholder="Category/Exam type">
+                    <option>O level</option>
+                    <option>A level</option>
+                    <option>BACC</option>
+                    <option>CAP</option>
+                    <option>ENS entrace</option>
+                    <option>ENSET entrance</option>
+                    <option>UB exam</option>
+                    <option>FHS exam</option>
+                    <option>CUIB exam</option>
+                    <option>BIAKA exam</option>
+                    <option>HIBMAT exam</option>
+                    <option>RUBIMS exam</option>
+                    <option>First school leaving</option>
+                    <option>Common entrance exam</option>
+                </select>
             </div>
             <div className="courses">
                 {/* <Subjectcourse name={"Chemistry"}/>
@@ -40,12 +55,23 @@ const Subjects = () => {
             <div className="sorting">
                 <div className="sortTitle"><b>FILTER</b></div>
                 <div className="halfsort" >
-                    <input type={"Date"} placeholder={"Date"}/>
-                    <input type={"text"} placeholder={"Difficulty"}/>
+                    <select type={"Date"} placeholder="Category/Exam type">
+                        <option>2021</option>
+                        <option>2020</option>
+                    </select>
+                    <select type={"Date"} placeholder="Category/Exam type">
+                        <option></option>
+                        <option>2020</option>
+                    </select>
                 </div>
-                <input type={"text"} placeholder={"Topic"} className="fullsort" />
-                <input type={"Number"} placeholder={"Frequency"} className="fullsort" />
-
+                <select type={"Date"} placeholder="Category/Exam type" className="fullsort" >
+                        <option></option>
+                        <option>2020</option>
+                </select>
+                <select type={"Date"} placeholder="Category/Exam type" className="fullsort" >
+                        <option></option>
+                        <option>2020</option>
+                </select>
             </div>
         </div>
     );
