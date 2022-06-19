@@ -36,13 +36,15 @@ const Subjects = () => {
                 <button>English</button>
                 <button>Logic</button>
             </div>
-            
+
             <div className="sorting">
-            <div className="sortTitle">FILTER</div>
-                <input type={"Date"} placeholder={"Date"} className="halfsort"/>
-                <input type={"text"} placeholder={"Difficulty"} className="halfsort"/>
-                <input type={"text"} placeholder={"Topic"} className="fullsort"/>
-                <input type={"Number"} placeholder={"Frequency"} className="fullsort"/>
+                <div className="sortTitle"><b>FILTER</b></div>
+                <div className="halfsort" >
+                    <input type={"Date"} placeholder={"Date"}/>
+                    <input type={"text"} placeholder={"Difficulty"}/>
+                </div>
+                <input type={"text"} placeholder={"Topic"} className="fullsort" />
+                <input type={"Number"} placeholder={"Frequency"} className="fullsort" />
 
             </div>
         </div>

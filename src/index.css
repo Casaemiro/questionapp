@@ -157,6 +157,7 @@ button:hover {
   display: flex;
   flex-direction: row;
   padding: 0%;
+  padding-right: 2%;
   max-width: 40%;
 }
 .ans {
@@ -195,6 +196,7 @@ button:hover {
   align-items: center;
  
   /* background-color: green; */
+  /* margin-right:%; */
 }
 .ans-final:hover {
   color: rgba(1, 15, 15, 0.948);
@@ -242,13 +244,16 @@ button:hover {
   width: 100%;
   padding: 2%;
   text-align: center;
-  color: green;
+  color: rgba(0, 128, 0, 0.549);
+  background-color: rgba(15, 86, 86, 0.301);
 }
 .fullsort {
   width: 100%;
 }
 .halfsort {
-  max-width: 42%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 .courses {
   padding-bottom: 4%;
