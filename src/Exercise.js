@@ -1,12 +1,12 @@
 // import { useState } from "react";
-const Exercise = ({ questio }) => {
+const Exercise = () => {
    
 //  const [numberOfQuestionToDisplay, setnumberOfQuestionToDisplay] = useState(5)
-window.addEventListener('DOMContentLoaded', ()=>renderQuestions());
+
  const renderQuestions = async () => {
     let uri = 'http://localhost:3000/questions';
-//  const container = document.querySelector(".dis")
- const container2 = document.querySelector(".questiondisplay")
+
+ const container2 = document.querySelector(".dis")
 
     const res = await fetch(uri);
     const questions = await res.json();
@@ -54,16 +54,16 @@ window.addEventListener('DOMContentLoaded', ()=>renderQuestions());
    </div>`
   i++
     });
-//  console.log(template)
-    container2.innerHTML += template
+ console.log("template")
+    container2.innerHTML = template
 
 }
-
+window.addEventListener('DOMContentLoaded', renderQuestions);
     return (
        
-        // <div className="dis">
-        <></>
-        // </div>
+        <div className="dis">
+        {/* <></> */}
+        </div>
 
     );
 }
