@@ -14,10 +14,32 @@ const Footer = () => {
                     BHS<br/>
                     BGS</p>
                 </div>
-                <div className="footer-top-middle"></div>
+                <div className="footer-top-middle">
+                <h3>About us</h3>
+                    <p>
+                    questio.ask is a platform designed to help students of all fields and specialties better prepare for thier exams
+                    </p>
+                    <div style={{
+                        fontSize: "1.3rem",
+                        fontWeight:"bold",
+                    }}>Become a partner</div>
+                    <p>
+                    you can partner with us by providing us with exam questions for your institution/donaing to help us increase the impact. <button style={{
+                        color: "white",
+                        border: "1px solid white",
+                        borderRadius: "10px"
+                    }}>click here</button> to partner
+                    </p>
+                </div>
+                <div className="footer-top-middle">
+                <h3>What's new</h3>
+                    <p>
+                    You can now find questions on a particular topic or questions that are rated easy by community members
+                    </p>
+                </div>
                 <div className="footer-top-right">
                     <form action="post" className="footer-form">
-                        <input type={"textarea"} placeholder="Comment/Recommendation..."/>
+                    <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Comments/Recomendation..."></textarea>
                         <button>SEND</button>
                     </form>
                 </div>
