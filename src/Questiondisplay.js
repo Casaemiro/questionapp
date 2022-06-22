@@ -8,6 +8,10 @@ const Questiondisplay = () => {
         <div className="questiondisplay">
             <Subjecttopic subject={"Mathematics"}/>
             <Exercise/>
+            <div className="next-prev">
+                <button className="prev">PREV</button>
+                <button className="next">NEXT</button>
+            </div>
             
         </div>
      );
