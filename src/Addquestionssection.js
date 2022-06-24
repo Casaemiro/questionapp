@@ -1,9 +1,20 @@
 const Addquestionssection = () => {
     return ( 
         <div className="add-question">
-        <div className="form-submit-head">
+        <div className="form-submit-head" style={
+            {
+                fontSize: "2.5rem",
+                marginBottom: "5%",
+                fontWeight: "bold"
+            }
+        }>
             Suport us by adding questions to our database
         </div>
+        <div style={{
+            display:"flex",
+            flexDirection: "row",
+
+        }}>
         <form className="filter-ques">
         <select type={"text"} placeholder="Category/Exam type">
                     <option>Category/Exam type</option>
@@ -50,6 +61,8 @@ const Addquestionssection = () => {
                 <textarea placeholder="D..." className="ansA" name="D"></textarea>
                 <button className="questionsubmit">SUBMIT</button>
             </form>
+        </div>
+        
         </div>
      );
 }
