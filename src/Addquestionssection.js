@@ -1,6 +1,9 @@
 const Addquestionssection = () => {
     return ( 
         <div className="add-question">
+        <div className="form-submit-head">
+            Suport us by adding questions to our database
+        </div>
         <form className="filter-ques">
         <select type={"text"} placeholder="Category/Exam type">
                     <option>Category/Exam type</option>
