@@ -1,52 +1,66 @@
 {
-    "questions": [
-        {
-            "id": 1,
-            "topic": ["differenciation", "Matrices"],
-            "quest": "Three important rivers of the Indian subcontinent have their sources near the Mansarover Lake in the Great Himalayas. These rivers are",
-            "answers": {
-                "A":"Indus Jhelum and Sutlej",
-                "B":"Brahmaputra Sutlej and Yamuna",
-                "C":"Brahmaputra Indus and Sutlej",
-                "D":"Jhelum Sutlej and Yamuna"
-            },
-            "year": "2021"
-        },
-        {
-            "id": 2,
-            "topic": ["Matrices"],
-            "quest": " Between the valley of Narmada river in the north and the Tapti in the south lies:",
-            "answers": {
-                "A":"The Satpura Range",
-                "B":"The Vindhya Range",
-                "C":"The Aravali Range",
-                "D":"None of Above"
-            },
-            "year": "2015"
-        },
-        {
-            "id": 3,
-            "topic": ["Logarithms", "Surds"],
-            "quest": "The instrument which measures the intensity of solar radiation is called:",
-            "answers": {
-                "A":"Barometer",
-                "B":"Energymeter",
-                "C":"Solarimeter",
-                "D":"Speedometer"
-            },
-            "year": "2021"
-        },
-        {
-            "id": 4,
-            "topic": ["Arithmtic Progression"],
-            "quest": "Solve the following exercises",
-            "answers": {
-                "A":"234",
-                "B":"30",
-                "C":"3000",
-                "D":"3.234"
-            },
-            "year": "2020"
+    "questions": {
+        "gceo": {
+            "geography": [
+                {
+                    "id": 1,
+                    "topic": [
+                        "differenciation",
+                        "Matrices"
+                    ],
+                    "quest": "Three important rivers of the Indian subcontinent have their sources near the Mansarover Lake in the Great Himalayas. These rivers are",
+                    "answers": {
+                        "A": "Indus Jhelum and Sutlej",
+                        "B": "Brahmaputra Sutlej and Yamuna",
+                        "C": "Brahmaputra Indus and Sutlej",
+                        "D": "Jhelum Sutlej and Yamuna"
+                    },
+                    "year": "2021"
+                },
+                {
+                    "id": 2,
+                    "topic": [
+                        "Matrices"
+                    ],
+                    "quest": " Between the valley of Narmada river in the north and the Tapti in the south lies:",
+                    "answers": {
+                        "A": "The Satpura Range",
+                        "B": "The Vindhya Range",
+                        "C": "The Aravali Range",
+                        "D": "None of Above"
+                    },
+                    "year": "2015"
+                },
+                {
+                    "id": 3,
+                    "topic": [
+                        "Logarithms",
+                        "Surds"
+                    ],
+                    "quest": "The instrument which measures the intensity of solar radiation is called:",
+                    "answers": {
+                        "A": "Barometer",
+                        "B": "Energymeter",
+                        "C": "Solarimeter",
+                        "D": "Speedometer"
+                    },
+                    "year": "2021"
+                },
+                {
+                    "id": 4,
+                    "topic": [
+                        "Arithmtic Progression"
+                    ],
+                    "quest": "Solve the following exercises",
+                    "answers": {
+                        "A": "234",
+                        "B": "30",
+                        "C": "3000",
+                        "D": "3.234"
+                    },
+                    "year": "2020"
+                }
+            ]
         }
-    ]
+    }
 }

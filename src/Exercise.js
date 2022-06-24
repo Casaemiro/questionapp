@@ -12,7 +12,10 @@ const Exercise = () => {
     const questions = await res.json();
     let template = ''
     let i = 1;
-    questions.forEach(question => {
+    // console.log(questions.gceo.geography);
+    const newquestions = questions.gceo.geography
+    console.log(newquestions);
+    newquestions.forEach(question => {
        template += `<div class="exercise">
 
        <div class="ask">
