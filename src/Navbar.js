@@ -9,8 +9,10 @@ const Navbar = () => {
                 <a href="/">help</a>
                 <a href="/">forum</a>
                 <a href="/">profile</a>
-                <a href="/"><button>LOG IN</button></a>
-                <a href="/"><button>SIGN IN</button></a>
+                <button style={{
+                    marginRight:"1%"
+                }}>LOG IN</button>
+                <button>SIGN IN</button>
             </div>
         </div>
      );
