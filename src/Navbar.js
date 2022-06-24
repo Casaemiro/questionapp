@@ -10,7 +10,8 @@ const Navbar = () => {
                 <a href="/">forum</a>
                 <a href="/">profile</a>
                 <button style={{
-                    marginRight:"1%"
+                    marginRight:"1%",
+                    textAlign:"center"
                 }}>LOG IN</button>
                 <button>SIGN IN</button>
             </div>
