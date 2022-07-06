@@ -1,4 +1,62 @@
+import {useState,useEffect} from "react"
+import {db} from "./firebase-config"
+import {collection, getDocs, addDoc} from "firebase/firestore"
+
+
+
+
+
 const Addquestionssection = () => {
+
+
+    const usersCollectionRef = collection(db,"Question")
+    const [users, setUsers] = useState([])
+    const [newQuest, setNewQuest] = useState("")
+    const [newAnsA, setnewAnsA] = useState("")
+    const [newAnsB, setnewAnsB] = useState("")
+    const [newAnsC, setnewAnsC] = useState("")
+    const [newAnsD, setnewAnsD] = useState("")
+    const [newTopic, setnewTopic] = useState("")
+    const [newSubject, setnewSubject] = useState("")
+    
+    function createQuestion(){
+        // await addDoc(usersCollectionRef, { ansB:newAnsB, ansC:newAnsC,ansA:newAnsA, ansD:newAnsD, newQuest:newQuest,newSubject:newSubject,newTopic:newTopic}).then(()=>{
+        //     console.log("success");
+        //     console.log(users);
+        // })
+        console.log("working")
+      }
+   
+      
+    useEffect(()=>{
+        const getUsers = async()=>{
+            const data = await getDocs(usersCollectionRef)
+            
+            setUsers(data.docs.map((doc)=>({...doc.data(), id:doc.id})))
+          }
+        getUsers()
+      },[])
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     return ( 
         <div className="add-question">
         <div className="form-submit-head" style={
@@ -16,7 +74,7 @@ const Addquestionssection = () => {
 
         }}>
         <form className="filter-ques">
-        <select type={"text"} placeholder="Category/Exam type">
+        <select type={"text"} placeholder="Category/Exam type"  onChange={(event)=>{setnewTopic(event.target.value)}}>
                     <option>Category/Exam type</option>
                     <option>O level</option>
                     <option>A level</option>
@@ -33,7 +91,7 @@ const Addquestionssection = () => {
                     <option>First school leaving</option>
                     <option>Common entrance exam</option>
                 </select>
-                <select type={"text"} placeholder="Subject">
+                <select type={"text"} placeholder="Subject" onChange={(event)=>{setnewSubject(event.target.value)}}>
                     <option>Subject</option>
                     <option>O level</option>
                     <option>A level</option>
@@ -53,13 +111,13 @@ const Addquestionssection = () => {
                 <textarea placeholder="Topics..."></textarea>
         </form>
             <form action="" className="addquest">
-                <textarea type={"text"} name="question" rows="9" cols="50" placeholder="Enter Question..."></textarea>
+                <textarea onChange={(event)=>{setNewQuest(event.target.value)}} type={"text"} name="question" rows="9" cols="50" placeholder="Enter Question..."></textarea>
                 <label>Provide answers below:</label>
-                <textarea placeholder="A..." className="ansA" name="A"></textarea>
-                <textarea placeholder="B..." className="ansA" name="B"></textarea>
-                <textarea placeholder="C..." className="ansA" name="C"></textarea>
-                <textarea placeholder="D..." className="ansA" name="D"></textarea>
-                <button className="questionsubmit">SUBMIT</button>
+                <textarea placeholder="A..." className="ansA" name="A" onChange={(event)=>{setnewAnsA(event.target.value)}}></textarea>
+                <textarea placeholder="B..." className="ansA" name="B" onChange={(event)=>{setnewAnsB(event.target.value)}}></textarea>
+                <textarea placeholder="C..." className="ansA" name="C" onChange={(event)=>{setnewAnsC(event.target.value)}}></textarea>
+                <textarea placeholder="D..." className="ansA" name="D" onChange={(event)=>{setnewAnsD(event.target.value)}}></textarea>
+                <button className="questionsubmit" onClick={createQuestion}>SUBMIT</button>
             </form>
         </div>
         

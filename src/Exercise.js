@@ -1,7 +1,59 @@
 // import { useState } from "react";
+
+// import {useState,useEffect} from "react"
+// import {db} from "./firebase-config"
+// import {collection, getDocs, addDoc, updateDoc, doc, deleteDoc} from "firebase/firestore"
+
 const Exercise = () => {
    
 //  const [numberOfQuestionToDisplay, setnumberOfQuestionToDisplay] = useState(5)
+// const usersCollectionRef = collection(db,"Question")
+// const [users, setUsers] = useState([])
+// const [newQuest, setNewQuest] = useState("")
+// const [newAnsA, setnewAnsA] = useState("")
+// const [newAnsB, setnewAnsB] = useState("")
+// const [newAnsC, setnewAnsC] = useState("")
+// const [newAnsD, setnewAnsD] = useState("")
+// const [newTopic, setnewTopic] = useState("")
+// const [newSubject, setnewSubject] = useState("")
+
+
+// const createQuestion = async()=> {
+//     await addDoc(usersCollectionRef, { quest:newQuest, ansA:newAnsA, ansB:newAnsB, ansC:newAnsC, ansD:newAnsD, topic:newTopic, subject:newSubject })
+//   }
+// useEffect(()=>{
+
+//     const getUsers = async()=>{
+//       const data = await getDocs(usersCollectionRef)
+      
+//       setUsers(data.docs.map((doc)=>({...doc.data(), id:doc.id})))
+//     }
+//     getUsers()
+//   }, [])
+
+// console.log(users[0])
+
+// link form to database
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  const renderQuestions = async () => {
     let uri = 'http://localhost:3000/questions';

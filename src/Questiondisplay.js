@@ -1,4 +1,4 @@
-import Exercise from "./Exercise";
+// import Exercise from "./Exercise";
 import Subjecttopic from "./Subjecttopic";
 
 const Questiondisplay = () => {
@@ -7,7 +7,7 @@ const Questiondisplay = () => {
     return ( 
         <div className="questiondisplay">
             <Subjecttopic subject={"Mathematics"}/>
-            <Exercise/>
+            {/* <Exercise/> */}
             <div className="next-prev">
                 <button className="prev">PREV</button>
                 <button className="next">NEXT</button>
