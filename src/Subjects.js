@@ -1,6 +1,6 @@
 // import Subjectcourse from "./Subjectcourse";
 
-const Subjects = () => {
+const Subjects = ({questions}) => {
     return (
         <div className="subject-section">
             <div className="subject-category">
@@ -22,12 +22,12 @@ const Subjects = () => {
                 </select>
             </div>
             <div className="courses">
-                {/* <Subjectcourse name={"Chemistry"}/>
-            <Subjectcourse name={"Biology"}/>
-            <Subjectcourse name={"Physics"}/>
-            <Subjectcourse name={"Computer Science"}/> */}
-                <button>Chemistry</button>
-                <button>Biology</button>
+                {Object.keys(questions[0].gceo).map((subject) => {
+                    return(<button key={subject}>{subject}</button>)
+                }
+                )}
+
+                {/* <button>Biology</button>
                 <button>Physics</button>
                 <button>Mathematics</button>
                 <button>Chemistry</button>
@@ -49,7 +49,7 @@ const Subjects = () => {
                 <button>Citizenship</button>
                 <button>French</button>
                 <button>English</button>
-                <button>Logic</button>
+                <button>Logic</button> */}
             </div>
 
             <div className="sorting">
@@ -65,12 +65,12 @@ const Subjects = () => {
                     </select>
                 </div>
                 <select type={"Date"} placeholder="Category/Exam type" className="fullsort" >
-                        <option></option>
-                        <option>2020</option>
+                    <option></option>
+                    <option>2020</option>
                 </select>
                 <select type={"Date"} placeholder="Category/Exam type" className="fullsort" >
-                        <option></option>
-                        <option>2020</option>
+                    <option></option>
+                    <option>2020</option>
                 </select>
             </div>
         </div>

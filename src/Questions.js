@@ -2,11 +2,11 @@ import Profileinfo from "./Profileinfo";
 import Questiondisplay from "./Questiondisplay";
 import Subjects from "./Subjects";
 
-const Question = () => {
+const Question = ({questions}) => {
     return ( 
         <div className="question-section">
-            <Subjects />
-            <Questiondisplay />
+            <Subjects questions = {questions}/>
+            <Questiondisplay questions = {questions}/>
             <Profileinfo />
         </div>
      );

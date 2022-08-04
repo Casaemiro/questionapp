@@ -159,13 +159,16 @@ button:hover {
   flex-direction: row;
   color: rgb(45, 12, 75);
 }
-.ans button {
+.ans span {
   margin: 0.6%;
   display: flex;
   flex-direction: row;
   padding: 0%;
   padding-right: 2%;
-  max-width: 40%;
+  margin-left: 1%;
+  /* max-width: 40%; */
+  /* border: 1px solid  black; */
+  background-color: rgba(0, 40, 0, 0.093);
 }
 .ans {
   display: flex;
@@ -189,18 +192,21 @@ button:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  /* background-color: rgba(0, 40, 0, 0.093); */
   
 }
 .first-ans:hover {
   border-right: 1px solid rgba(1, 15, 15, 0.945);
 }
 .ans-final {
-  margin: 2%;
+  margin: 5%;
   color: rgba(1, 15, 15, 0.607);
   display: flex;
   flex-direction: row;
   text-align: left;
+  /* background-color: rgba(0, 40, 0, 0.093); */
   align-items: center;
+  
  
   /* background-color: green; */
   /* margin-right:%; */

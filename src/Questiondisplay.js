@@ -1,13 +1,14 @@
-// import Exercise from "./Exercise";
+import Exercise from "./Exercise";
 import Subjecttopic from "./Subjecttopic";
 
-const Questiondisplay = () => {
+const Questiondisplay = ({questions}) => {
+    let temp = questions[0].gceo.Biology.questions
     
    
     return ( 
         <div className="questiondisplay">
-            <Subjecttopic subject={"Mathematics"}/>
-            {/* <Exercise/> */}
+            <Subjecttopic subject={"Biology"}/>
+             {(temp).map((subject)=>{return (<Exercise questions={subject}/>)})}
             <div className="next-prev">
                 <button className="prev">PREV</button>
                 <button className="next">NEXT</button>
