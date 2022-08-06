@@ -1,15 +1,14 @@
 // import { useState } from "react";
 
 
-const Exercise = ({questions}) => {
-   console.log("wowo", questions);
-   let i = 1
+const Exercise = ({questions,number}) => {
+
 return(
     <div className="exercise">
 
        <div className="ask">
            <div className="numbering">
-               {questions.id}.
+               {number}.
            </div>
            {questions.question}
        </div>
@@ -31,7 +30,7 @@ return(
                Freq <b>{}</b>
            </div>
            <div className="stat">
-               Difficulty <b color="green"> 2/10 </b>
+               Difficulty <b color="green"> {questions.difficulty}/10 </b>
            </div>
            <div className="stat">
                Topic <b color="green">{(questions.topics).join(", ")}</b>

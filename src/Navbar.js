@@ -13,7 +13,7 @@ const Navbar = () => {
                     marginRight:"1%",
                     textAlign:"center"
                 }}>LOG IN</button>
-                <button>SIGN IN</button>
+                <button style={{backgroundColor:"white"}}>SIGN UP</button>
             </div>
         </div>
      );

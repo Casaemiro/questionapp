@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {questions && <Question questions = {questions}/>}
+      {questions && <Question questions = {questions} sorted={setQuestions}/>}
       <Addquestionssection />
       <Footer />
     </div>

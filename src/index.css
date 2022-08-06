@@ -142,7 +142,7 @@ button:hover {
   padding-right: 2%;
 
   /* background-color: rgba(0, 128, 0, 0.196); */
-  background-color: aqua;
+  background-color: rgba(0, 255, 255, 0.368);
   border-bottom-right-radius: 70px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -167,8 +167,13 @@ button:hover {
   padding-right: 2%;
   margin-left: 1%;
   /* max-width: 40%; */
+  cursor: pointer;
+  border-radius: 5px;
   /* border: 1px solid  black; */
   background-color: rgba(0, 40, 0, 0.093);
+}
+.ans span:hover {
+  background-color: rgba(255, 0, 0, 0.086);
 }
 .ans {
   display: flex;
@@ -185,26 +190,26 @@ button:hover {
 }
 .first-ans {
   border-right: 1px solid rgba(1, 15, 15, 0.4);
-  padding: 8%;
+  padding: 8px;
   font-weight: bold;
   color: rgba(1, 15, 15, 0.607);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* background-color: rgba(0, 40, 0, 0.093); */
+  /* background-color: red; */
   
 }
 .first-ans:hover {
   border-right: 1px solid rgba(1, 15, 15, 0.945);
 }
 .ans-final {
-  margin: 5%;
+  padding: 8px;
   color: rgba(1, 15, 15, 0.607);
   display: flex;
   flex-direction: row;
   text-align: left;
-  /* background-color: rgba(0, 40, 0, 0.093); */
+  /* background-color: red; */
   align-items: center;
   
  
@@ -237,7 +242,7 @@ button:hover {
   background-color: rgba(0, 255, 255, 0.251);
 }
 .sorting {
-  border: 1px solid rgba(1, 15, 15, 0.233);
+  /* border: 1px solid rgba(1, 15, 15, 0.233); */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -392,6 +397,8 @@ button:hover {
 }
 .ansA {
   margin-top: 2%;
+  border-radius: 5px;
+  border: none;
 }
 .questionsubmit {
   padding-top: 4%;
