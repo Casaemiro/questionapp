@@ -1,55 +1,40 @@
 // import Subjectcourse from "./Subjectcourse";
 
-const Subjects = () => {
+const Subjects = ({questions,sorted}) => {
+    console.log("t",questions);
+    const sortExam = (examType) => {
+        let newQuestions = questions.filter((elem)=>elem.exam===examType);
+        console.log(newQuestions)
+        // sorted(newQuestions)
+        return newQuestions
+    }
+    sortExam("gceo")
     return (
         <div className="subject-section">
             <div className="subject-category">
-                <select type={"text"} placeholder="Category/Exam type">
-                    <option>O level</option>
-                    <option>A level</option>
-                    <option>BACC</option>
-                    <option>CAP</option>
-                    <option>ENS entrace</option>
-                    <option>ENSET entrance</option>
-                    <option>UB exam</option>
-                    <option>FHS exam</option>
-                    <option>CUIB exam</option>
-                    <option>BIAKA exam</option>
-                    <option>HIBMAT exam</option>
-                    <option>RUBIMS exam</option>
-                    <option>First school leaving</option>
-                    <option>Common entrance exam</option>
+                <select type={"text"} placeholder="Category/Exam type" onChange={(e)=>{sortExam(e.target.value)}}>
+                    <option value={"gceo"}>O level</option>
+                    <option value={"gcea"}>A level</option>
+                    <option value={"gceo"}>BACC</option>
+                    <option value={"gceo"}>CAP</option>
+                    <option value={"gceo"}>ENS entrace</option>
+                    <option value={"gceo"}>ENSET entrance</option>
+                    <option value={"gceo"}>UB exam</option>
+                    <option value={"gceo"}>FHS exam</option>
+                    <option value={"gceo"}>CUIB exam</option>
+                    <option value={"gceo"}>BIAKA exam</option>
+                    <option value={"gceo"}>HIBMAT exam</option>
+                    <option value={"gceo"}>RUBIMS exam</option>
+                    <option value={"gceo"}>First school leaving</option>
+                    <option value={"gceo"}>Common entrance exam</option>
                 </select>
             </div>
             <div className="courses">
-                {/* <Subjectcourse name={"Chemistry"}/>
-            <Subjectcourse name={"Biology"}/>
-            <Subjectcourse name={"Physics"}/>
-            <Subjectcourse name={"Computer Science"}/> */}
-                <button>Chemistry</button>
-                <button>Biology</button>
-                <button>Physics</button>
-                <button>Mathematics</button>
-                <button>Chemistry</button>
-                <button>Geology</button>
-                <button>Further Mathematics</button>
-                <button>Aditional Mathematics</button>
-                <button>Citizenship</button>
-                <button>French</button>
-                <button>English</button>
-                <button>Logic</button>
-                <button>Chemistry</button>
-                <button>Biology</button>
-                <button>Physics</button>
-                <button>Mathematics</button>
-                <button>Chemistry</button>
-                <button>Geology</button>
-                <button>Further Mathematics</button>
-                <button>Aditional Mathematics</button>
-                <button>Citizenship</button>
-                <button>French</button>
-                <button>English</button>
-                <button>Logic</button>
+                {questions.map((question) => {
+                    return(<button key={question.id}>{question.subject}</button>)
+                }
+                )}
+
             </div>
 
             <div className="sorting">
@@ -65,12 +50,12 @@ const Subjects = () => {
                     </select>
                 </div>
                 <select type={"Date"} placeholder="Category/Exam type" className="fullsort" >
-                        <option></option>
-                        <option>2020</option>
+                    <option></option>
+                    <option>2020</option>
                 </select>
                 <select type={"Date"} placeholder="Category/Exam type" className="fullsort" >
-                        <option></option>
-                        <option>2020</option>
+                    <option></option>
+                    <option>2020</option>
                 </select>
             </div>
         </div>

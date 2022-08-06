@@ -1,74 +1,49 @@
 // import { useState } from "react";
-const Exercise = () => {
-   
-//  const [numberOfQuestionToDisplay, setnumberOfQuestionToDisplay] = useState(5)
 
- const renderQuestions = async () => {
-    let uri = 'http://localhost:3000/questions';
 
- const container2 = document.querySelector(".dis")
+const Exercise = ({questions,number}) => {
 
-    const res = await fetch(uri);
-    const questions = await res.json();
-    let template = ''
-    let i = 1;
-    // console.log(questions.gceo.geography);
-    const newquestions = questions.gceo.geography
-    console.log(newquestions);
-    newquestions.forEach(question => {
-       template += `<div class="exercise">
+return(
+    <div className="exercise">
 
-       <div class="ask">
-           <div class="numbering">
-               ${i}.
+       <div className="ask">
+           <div className="numbering">
+               {number}.
            </div>
-           ${question.quest}
+           {questions.question}
        </div>
-       <div class="ans">
-           <button>
-               <div class="first-ans">A</div> <div class="ans-final">${question.answers.A}</div>
-           </button>
-           <button>
-               <div class="first-ans">B</div><div class="ans-final">${question.answers.B}</div>
-           </button>
-           <button>
-               <div class="first-ans">C</div><div class="ans-final">${question.answers.C}</div>
-           </button>
-           <button>
-               <div class="first-ans">D</div><div class="ans-final">${question.answers.D}</div> </button>
+       <div className="ans">
+           <span>
+               <div className="first-ans">A</div> <div className="ans-final">{questions.answers[0]}</div>
+           </span>
+           <span>
+               <div className="first-ans">B</div><div className="ans-final">{questions.answers[1]}</div>
+           </span>
+           <span>
+               <div className="first-ans">C</div><div className="ans-final">{questions.answers[2]}</div>
+           </span>
+           <span>
+               <div className="first-ans">D</div><div className="ans-final">{questions.answers[3]}</div> </span>
        </div>
-       <div class="ans-sort-bottom">
-           <div class="stat">
-               Freq <b>${26}</b>
+       <div className="ans-sort-bottom">
+           <div className="stat">
+               Freq <b>{}</b>
            </div>
-           <div class="stat">
-               Difficulty <b color="green"> 2/10 </b>
+           <div className="stat">
+               Difficulty <b color="green"> {questions.difficulty}/10 </b>
            </div>
-           <div class="stat">
-               Topic <b color="green">Logarithms, Matrices</b>
+           <div className="stat">
+               Topic <b color="green">{(questions.topics).join(", ")}</b>
            </div>
-           <div class="stat">
-               Latst.Ex <b color="green">${question.year}</b>
+           <div className="stat">
+               Latst.Ex<b> {questions.year}</b><b color="green">{}</b>
            </div>
-           <div class="stat">
+           <div className="stat">
                Correct <b color="green">150/200</b>
            </div>
        </div>
-   </div>`
-  i++
-    });
- console.log("template")
-    container2.innerHTML = template
-
-}
-window.addEventListener('DOMContentLoaded', renderQuestions);
-    return (
-       
-        <div className="dis">
-        {/* <></> */}
-        </div>
-
-    );
+   </div>
+)
 }
 
 export default Exercise;

@@ -1,0 +1,10 @@
+
+  API_KEY = "AIzaSyC_4EO5NzDukE_F1FM3QClukIeQa2OaQPU"
+  AUTH_DOMAIN = "questionapp-e915e.firebaseapp.com" 
+  PROJECT_ID = "questionapp-e915e"
+  STORAGE_BUCKET = "questionapp-e915e.appspot.com"
+  MESSAGING_SENDER_ID = "751649528710"
+  APP_ID = "1:751649528710:web:763e8bfd0da7c43c6f2a07"
+  MEASUREMENT_ID = "G-ZHD78BTKBB"
+
+
