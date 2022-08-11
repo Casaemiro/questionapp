@@ -68,6 +68,7 @@ button:hover {
   margin-left: 2%;
 }
 
+
 .subject-section {
   display: flex;
   flex-direction: column;
@@ -253,8 +254,8 @@ button:hover {
   margin-right: 1%;
   display: flex;
   flex-direction: row;
-  padding-left: 2%;
-  margin-top: 0.4%;
+  /* padding-left: 2%; */
+  margin: 0.4%;
   /* justify-content: center; */
 
 }
@@ -264,7 +265,7 @@ button:hover {
   ;
   border-radius: 10px;
   padding: 0.5%;
-  margin-left: 1%;
+  /* margin-left: 1%; */
   font-size: 0.8rem;
   /* color: rgba(1, 15, 15, 0.607); */
   color: green;
@@ -557,6 +558,9 @@ button:hover {
   }
   .meno {
     display: contents;
+  }
+  .stat {
+    font-size: 0.7rem;
   }
 }
 
