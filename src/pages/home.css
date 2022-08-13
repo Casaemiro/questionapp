@@ -1,0 +1,75 @@
+.welcomeimage {
+    border-radius: 5px;
+    box-shadow: 5px 5px 25px 1px rgba(0, 0, 0, 0.423);
+    padding: 0;
+    width: 30%;
+}
+.bigwelcome {
+    font-size: 3rem;
+}
+.wel {
+    display: flex;
+    flex-direction: row;
+    margin: 5% auto;
+    width: 80%;
+    justify-content: center;
+}
+.weltext {
+    width: 40%;
+}
+.services {
+    text-align: center;
+    width: 90%;
+    margin-bottom: 10%;
+}
+.services-head {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    border-top: 1px solid rgba(0, 0, 0, 0.325);
+    width: 80%;
+}
+.hd {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.competition {
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.292);
+    width: 70%;
+    margin-bottom: 10%;
+}
+.competition-head {
+    width: 99%;
+    border-bottom:1px solid rgba(0, 0, 0, 0.238);
+}
+.cen {
+    text-align: center;
+    width: 100%;
+}
+@media only screen and (max-width: 830px) {
+    .welcomeimage {
+        display: none;
+    }
+    .weltext {
+        text-align: center;
+        width: 70%;
+    }
+    .services-head {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .weltext {
+        text-align: center;
+        width: 90%;
+        font-size: 0.8rem;
+    }
+    .bigwelcome {
+        font-size: 2rem;
+    }
+    .services {
+        font-size: 0.8rem;
+    }
+}

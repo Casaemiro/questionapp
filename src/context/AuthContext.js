@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const AuthContext = createContext(auth)
 export const AuthContextProvider = ({ children }) => {
-    const [user, setUser] = useState({})
+    const [user, setUser] = useState(null)
     const googleSignIn = () => {
         const provider = new GoogleAuthProvider();
         signInWithPopup(auth, provider)
@@ -19,7 +19,7 @@ const logOut = () => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
 
             setUser(currentUser)
-            console.log(currentUser);
+            console.log("user", currentUser);
         });
         return () => {
             unsubscribe()

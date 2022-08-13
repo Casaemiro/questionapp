@@ -1,44 +1,87 @@
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 const Footer = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_g7gppds', 'template_4hxia1i', form.current, 'kyX-5c9uj0jFF3MzW')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+  
     return (
-        <div className="footer">
-            <div className="footer-top">
-                <div className="footer-top-left">
+        <div className="footer" id="footer">
+            <div className="footer-top row">
+                <div className="partner footer-top-left col-11 col-sm-3 col-md-4 col-lg-3">
                     <h3>Partners</h3>
-                    <p>University of Buea<br />
-                        BIAKA institude<br />
-                        HIBMAT<br />
-                        LANDMARK<br />
-                        CHITECHMA<br />
-                        RUBIMS<br />
-                        CUIB<br />
-                        BHS<br />
-                        BGS</p>
+                    
+                    <p className='row' ><>University of Buea<br /></>
+                    <>BIAKA institude<br /></>
+                    <>HIBMAT<br /></>
+                    <>LANDMARK<br /></>
+                    <>CHITECHMA<br /></>
+                    <>RUBIMS<br /></>
+                    <>CUIB<br /></>
+                    <>BHS<br /></>
+                    <>BGS</></p>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                 </div>
-                <div className="footer-top-middle">
-                    <h3>About us</h3>
-                    <p>
-                        questio.ask is a platform designed to help students of all fields and specialties better prepare for thier exams
-                    </p>
-                    <h3>Become a partner</h3>
-                    <p>
-                        you can partner with us by providing us with exam questions for your institution/donaing to help us increase the impact. <button style={{
-                            color: "white",
-                            border: "1px solid white",
-                            borderRadius: "10px"
-                        }}>click here</button> to partner
-                    </p>
+                <div className="footer-top-middle col-12 col-sm-8 col-md-4 col-lg-3 row">
+                    <div className="col-sm-6 col-md-12">
+
+                        <h3>About us</h3>
+                        <p>
+                            question.ask is a platform designed to help students of all fields and specialties better prepare for thier exams
+                        </p>
+                    </div>
+                    <div className="col-sm-6 col-md-12 ">
+
+                        <h3>Become a partner</h3>
+                        <p>
+                            you can partner with us by providing us with exam questions for your institution/donaing to help us increase the impact. <a style={{
+                                color: "white"
+                            }}>click here</a> to partner
+                        </p>
+                    </div>
                 </div>
-                <div className="footer-top-middle">
+                <div className="footer-top-middle col-12 col-md-4 col-lg-3">
                     <h3>What's new</h3>
                     <p>
                         You can now find questions on a particular topic or questions that are rated easy by community members
                     </p>
                 </div>
-                <div className="footer-top-right">
-                    <form action="post" className="footer-form">
-                        <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Comments/Recomendation..."></textarea>
-                        <button>SEND</button>
+                <div className=" col-12 col-md-4 col-lg-3">
+                    <form  ref={form} onSubmit={sendEmail} action="post" className="footer-form">
+                    <input type="text" name="user_name" className="w-100 mb-2 p-2" placeholder='Name...' />
+                        <input type="text" name='user_email' placeholder="email..." className="w-100 mb-2 p-2" />
+                        <textarea id="w3review" name="message" rows="4" cols="50" placeholder="Comments/Recomendation..." className="w-100"></textarea>
+                        <input type="submit" value="Send" />
+                        
                     </form>
+                </div>
+                <div>
+                    {/* <form>
+                        <label>Name</label>
+                        
+                        <label>Email</label>
+                        <input type="email" name="user_email" />
+                        <label>Message</label>
+                        <textarea name="message" />
+                        <input type="submit" value="Send" />
+                    </form> */}
                 </div>
             </div>
             <div className="footer-links">

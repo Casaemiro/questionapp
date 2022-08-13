@@ -6,8 +6,9 @@ import { UserAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 const Login = () => {
+    
      const {googleSignIn, user} = UserAuth()
-     const navigate  = useNavigate()
+     const navigate = useNavigate()
 
     const handleGoogleSignIn = async () => {
         try{
@@ -19,8 +20,11 @@ const Login = () => {
 
 
     useEffect(()=>{
+        console.log("wow", user);
         if(user != null){
+            console.log("wow", user);
             navigate('/questions')
+            
         }
         
     },[user])
@@ -65,8 +69,8 @@ const Login = () => {
                 </div>
 
                 <div className="input-group mb-3">
-                    <span className="input-group-text" id="basic-addon1">Username</span>
-                    <input type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" onChange={(e) => { setEmail(e.target.value) }} />
+                    <span className="input-group-text" id="basic-addon1">Email</span>
+                    <input type="text" className="form-control" placeholder="email..." aria-label="Username" aria-describedby="basic-addon1" onChange={(e) => { setEmail(e.target.value) }} />
                 </div>
                 <div className="input-group">
                     <span className="input-group-text" id="basic-addon1">Password</span>
@@ -74,7 +78,9 @@ const Login = () => {
                 </div>
                 <button className="mt-3 w-100" onClick={loginBtn}>Log in</button>
                 <div style={{ textAlign: "center" }}>Don't have an account? <a href="/signup">Sign up</a></div>
-                <div><GoogleButton onClick={handleGoogleSignIn}/></div>
+                <button className="mt-3 w-100" onClick={handleGoogleSignIn}><i className="fa-brands fa-google"></i> Sign in with Google</button>
+
+                {/* <div><GoogleButton/></div> */}
             </div>
             
 

@@ -57,7 +57,7 @@ const signupBtn = () => {
                 <button className="mt-3 w-100" onClick={signupBtn}>Sign up</button>
                 <div style={{ textAlign: "center" }}>Already have an account? <a href="/login">login</a></div>
 
-            <div><GoogleButton /></div>
+            {/* <div><GoogleButton /></div> */}
             </div>
         </>
 
