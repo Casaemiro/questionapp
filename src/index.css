@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgba(0, 255, 255, 0.359);
+  /* background-color: rgba(0, 255, 255, 0.359); */
   color: rgba(4, 41, 41, 0.93);
 }
 
@@ -37,10 +37,10 @@ button:hover {
 .nav-section {
   display: flex;
   flex-direction: row;
-  width: 90%;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  /* background-color: aqua; */
+  background-color: white;
   border-bottom: 1px solid rgba(2, 34, 34, 0.148);
   /* border-radius: 10px; */
 }
@@ -67,6 +67,7 @@ button:hover {
 .logo-section {
   margin-left: 2%;
 }
+
 
 .subject-section {
   display: flex;
@@ -253,8 +254,8 @@ button:hover {
   margin-right: 1%;
   display: flex;
   flex-direction: row;
-  padding-left: 2%;
-  margin-top: 0.4%;
+  /* padding-left: 2%; */
+  margin: 0.4%;
   /* justify-content: center; */
 
 }
@@ -264,7 +265,7 @@ button:hover {
   ;
   border-radius: 10px;
   padding: 0.5%;
-  margin-left: 1%;
+  /* margin-left: 1%; */
   font-size: 0.8rem;
   /* color: rgba(1, 15, 15, 0.607); */
   color: green;
@@ -383,26 +384,26 @@ button:hover {
 
 }
 
-.footer-top-right {
+/* .footer-top-right {
   width: 27%;
   display: flex;
   flex-direction: column;
-  /* background-color: green; */
+
 }
 
 .footer-top-middle {
   width: 22%;
   display: flex;
   flex-direction: column;
-  /* background-color: yellow; */
+
 }
 
 .footer-top-left {
   width: 12%;
   display: flex;
   flex-direction: column;
-  /* background-color: red; */
-}
+
+} */
 
 .footer-form {
   width: 100%;
@@ -558,6 +559,12 @@ button:hover {
   .meno {
     display: contents;
   }
+  .stat {
+    font-size: 0.7rem;
+  }
+  .partner {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 710px) {
@@ -588,14 +595,15 @@ button:hover {
 
   .footer-top-middle {
     font-size: 0.7rem;
-    flex-direction: row;
-    width:100%
+   
   }
 
   .topic {
     font-size: 1.4rem;
+    padding: 5px;
+    background-color: transparent;
   }
-  .footer-top-left {
+  /* .footer-top-left {
     width:50%;
   }
   .footer-top-right {
@@ -603,5 +611,5 @@ button:hover {
   }
   .footer-top {
     flex-direction :column
-  }
+  } */
 }
