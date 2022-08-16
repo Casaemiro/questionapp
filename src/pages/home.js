@@ -51,7 +51,7 @@ const Home = () => {
             </div>
             <div className='competition'>
                 <div className='mx-1 competition-head'>Competition</div>
-                <div className="p-5 cen">On going competitions and competition notices will be posted here
+                <div className="p-sm-2 p-3 cen">On going competitions and competition notices will be posted here
                 <p>Sign up to receive notifications through email</p>
                 <input type={"text"} placeholder="example@gmail.com..." className="w-40"/>
                 <input type={"submit"} value="Send" className="w-40 px-3" />

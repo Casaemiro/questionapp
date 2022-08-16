@@ -33,7 +33,9 @@ console.log(admin);
                 {user && admin.includes(user.email) && <span className="" style={{cursor:"pointer"}}><a href="/admin">Admin</a></span>}
                 <a href="/questions">questions</a>
                 <a href="#footer">contact</a>
-                <a href="/">help</a>
+                <a href="#" onClick={()=>{
+                    navigate('/help')
+                }}>help</a>
                 {/* <a href="/">chat</a> */}
                 <a href="/">profile</a>
                 {user?.email ? <button onClick={handleSignOut} style={{
