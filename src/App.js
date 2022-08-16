@@ -10,6 +10,7 @@ import Signup from './pages/signup'
 import { AuthContextProvider } from "./context/AuthContext";
 import Home from "./pages/home";
 import Admin from "./pages/Admin";
+import Help from "./pages/help";
 function App() {
 
   const [questions, setQuestions] = useState("")
@@ -46,7 +47,9 @@ function App() {
         <Route path='/admin' element={<Admin />} />
         <Route path='/questions' element={questions && <Questions questions={questions} sorted={setQuestions} />} />
         <Route path='/' element={<Home />} />
+        <Route path='/help' element={<Help />} />
         <Route path='/signup' element={<Signup />} />
+
 
       </Routes>
       <Footer />
