@@ -359,8 +359,15 @@ button:hover {
   width: 100%;
   /* background-color: green; */
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.info-me {
+  border-top: 1px solid rgba(0, 0, 0, 0.211);
+}
+.score {
+  font-weight: bold;
+}
 .next {
   /* background-color: green; */
   margin-left: auto;
@@ -434,7 +441,7 @@ button:hover {
   padding-top: 5%;
   padding-bottom: 5%;
   align-items: center;
-  margin-top: 5%;
+  /* margin-top: 5%; */
 }
 
 .addquest {
@@ -477,6 +484,7 @@ button:hover {
 
 .men {
   display: none;
+  cursor: pointer;
 }
 
 .meno {
@@ -494,7 +502,9 @@ button:hover {
   font-weight: bold;
   text-align: center;
 }
-
+.confirm {
+  display: none;
+}
 .filter {
   display: none;
 }

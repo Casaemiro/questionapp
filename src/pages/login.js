@@ -3,7 +3,7 @@ import app from '../firebase-config'
 import { useState } from "react";
 import GoogleButton from "react-google-button";
 import { UserAuth } from "../context/AuthContext";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 const Login = () => {
     
@@ -79,6 +79,10 @@ const Login = () => {
                 <button className="mt-3 w-100" onClick={loginBtn}>Log in</button>
                 <div style={{ textAlign: "center" }}>Don't have an account? <a href="/signup">Sign up</a></div>
                 <button className="mt-3 w-100" onClick={handleGoogleSignIn}><i className="fa-brands fa-google"></i> Sign in with Google</button>
+                <Link to="/phonesignup">
+                    <button className="mt-3 w-100" > Sign in with Phone</button>
+                </Link>
+                
 
                 {/* <div><GoogleButton/></div> */}
             </div>

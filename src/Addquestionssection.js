@@ -79,12 +79,8 @@ const Addquestionssection = () => {
                         <option value={"fslc"} >First school leaving</option>
                         <option value={"ce"} >Common entrance exam</option>
                     </select>
-                    <select type={"text"} placeholder="Subject" onChange={(event) => { setnewSubject(event.target.value) }}>
-                        <option>Subject/course</option>
-                        <option>Biology</option>
-                        <option>Chemistry</option>
-
-                    </select>
+                    <input type={"text"} placeholder="Subject" onChange={(event) => { setnewSubject(event.target.value) }} />
+                    
                     <textarea className="ansA" placeholder="Topics...e.g Osmosis,Transport" onChange={(event) => { setnewTopic(event.target.value) }}></textarea>
                     <textarea className="ansA" placeholder="year..." onChange={(event) => { setnewYear(event.target.value) }}></textarea>
                     Difficulty

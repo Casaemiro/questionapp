@@ -7,6 +7,7 @@ const Question = ({ questions, sorted }) => {
     //setting all questions
     const [newQuest, setNewQuest] = useState(questions)
     const [newQuestsorted, setNewQuestsorted] = useState(questions)
+    // const [newsubject, setNewSubject] = useState(questions)
     // const [date,setDate] = useState(2019)
     // console.log("date",date);
     console.log("preQ", newQuest);
@@ -62,7 +63,7 @@ const Question = ({ questions, sorted }) => {
                     </select>
                 </div>
                 <div className="courses">
-                    {questions.map((question) => {
+                    {newQuestsorted.map((question) => {
                         return (<button onClick={() => { sortsubject(question.subject) }} key={question.id}>{question.subject}</button>)
                     }
                     )}

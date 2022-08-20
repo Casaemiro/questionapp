@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-
+import { useEffect, useState } from 'react';
 const Footer = () => {
     const form = useRef();
 
@@ -14,7 +14,17 @@ const Footer = () => {
             console.log(error.text);
         });
     };
-  
+    const [isFormValidated, setIsFormValidated] = useState(true);
+    const [name, setName] = useState("")
+    const [message, setMessage] = useState("")
+    useEffect(() => {
+        if (name !== "" && message !== "") {
+            setIsFormValidated(false)
+        } else {
+            setIsFormValidated(true)
+
+        }
+    }, [name, message])
     return (
         <div className="footer" id="footer">
             <div className="footer-top row">
@@ -65,10 +75,13 @@ const Footer = () => {
                 </div>
                 <div className=" col-12 col-md-4 col-lg-3">
                     <form  ref={form} onSubmit={sendEmail} action="post" className="footer-form">
-                    <input type="text" name="user_name" className="w-100 mb-2 p-2" placeholder='Name...' />
+                    <input type="text" name="user_name" onChange={(e)=>{setName(e.target.value)}} className="w-100 mb-2 p-2" placeholder='Name...' />
                         <input type="text" name='user_email' placeholder="email..." className="w-100 mb-2 p-2" />
-                        <textarea id="w3review" name="message" rows="4" cols="50" placeholder="Comments/Recomendation..." className="w-100"></textarea>
-                        <input type="submit" value="Send" />
+                        <textarea id="w3review" name="message" onChange={(e)=>{
+
+                        setMessage(e.target.value)
+                        }} rows="4" cols="50" placeholder="Comments/Recomendation..." className="w-100"></textarea>
+                        <input type="submit" value="Send" disabled={isFormValidated}/>
                         
                     </form>
                 </div>
